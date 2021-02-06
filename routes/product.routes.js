@@ -45,7 +45,7 @@ router.patch("/products/:id", (req, res) => {
   })
     .then((response) => {
       res.status(200).json(response);
-      console.log('edited')
+      console.log('edited', response)
     })
     .catch((err) => {
       console.log(err);
